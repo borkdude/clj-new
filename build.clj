@@ -17,7 +17,7 @@
       (assoc :lib lib :version version)
       (bb/run-tests) ; there are no tests yet, but that's OK
       (bb/clean)
-      (assoc :src-pom "pom_template.xml")
+      (assoc :src-pom "template/pom.xml")
       (bb/jar)))
 
 (defn deploy "Deploy the JAR to Clojars." [opts]
