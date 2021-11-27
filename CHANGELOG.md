@@ -1,7 +1,7 @@
 # Changes
 
 * 1.2.next in progress
-  * Update `build-clj` to v0.5.0 in all templates.
+  * Update `build-clj` to v0.5.5 in all templates.
 
 * 1.2.362 -- 2021-09-22
   * Update `build-clj` to v0.4.0 (which adds `install` task).
