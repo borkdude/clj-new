@@ -20,6 +20,10 @@
 (def ^:dynamic *use-snapshots?* false)
 (def ^:dynamic *template-version* nil)
 
+(defn- default-shutdown [] (shutdown-agents))
+
+(def ^:dynamic *shutdown* default-shutdown)
+
 (defn resolve-and-load
   "Given a deps map and an extra-deps map, resolve the dependencies, figure
   out the classpath, and load everything into our (now dynamic) classloader."
@@ -368,7 +372,8 @@
                     lnt/*dir*          output
                     lnt/*force?*       force]
             (create* template name args))))
-  (shutdown-agents))
+  (when *shutdown*
+    (*shutdown*)))
 
 (defn create
   "Exposed to clj-new command-line with simpler signature."
@@ -486,7 +491,8 @@
                 *template-version* version
                 cnt/*overwrite?*   false]
         (generate-code* template prefix generate args)))
-    (shutdown-agents)))
+    (when *shutdown*
+      (*shutdown*))))
 
 (defn generate-code
   "Exposed to clj new task with simpler signature."
