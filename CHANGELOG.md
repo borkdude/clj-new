@@ -1,7 +1,9 @@
 # Changes
 
 * 1.2.next in progress
-  * Update `build-clj` to v0.5.5 in all templates.
+  * Address #82 by making shutdown process overridable. STILL NEEDS DOCUMENTATION!
+  * Update `build-clj` to v0.6.0 in all templates and use "slim" dependency for `app` template.
+  * Update `tools.deps.alpha` to 0.12.1084.
 
 * 1.2.362 -- 2021-09-22
   * Update `build-clj` to v0.4.0 (which adds `install` task).
