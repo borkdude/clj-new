@@ -562,6 +562,24 @@ Nearly all templates will expect these to be strings but you can use symbols and
 
 > Note: conversion of `:args` (and `:output`) from symbols to strings was added in `clj-new` 1.1.297.
 
+#### Using `clj-new` Programmatically
+
+Since you can depend on `clj-new` as a library, you can invoke `clj-new/create` programmatically,
+such as in a build/test pipeline. By default, `clj-new/create` calls `shutdown-agents` when it
+completes, which is reasonable for a "tool" but is not conducive to programmatic use. An otherwise
+undocumented dynamic Var exists which lets you override this behavior:
+
+```clojure
+  (require 'clj-new)
+
+  (binding [clj-new.helpers/*shutdown* nil]
+    (clj-new/create {:template "app" :name 'example/four}))
+```
+
+This will suppress the call to `shutdown-agents`.
+
+> Note: the `clj-new.helpers` namespace is undocumented and contains implementation details that are subject to change. Only this `*shutdown*` Var and behavior should be relied on.
+
 ## clj Generators
 
 Whereas clj templates will generate an entire new project in a new directory, clj generators are intended to add / modify code in an existing project.

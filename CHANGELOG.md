@@ -1,7 +1,7 @@
 # Changes
 
 * 1.2.next in progress
-  * Address #82 by making shutdown process overridable. STILL NEEDS DOCUMENTATION!
+  * Address #82 by making shutdown process overridable.
   * Update `build-clj` to v0.6.0 in all templates and use "slim" dependency for `app` template.
   * Update `tools.deps.alpha` to 0.12.1084.
 
