@@ -1,8 +1,8 @@
 # Changes
 
-* 1.2.next in progress
+* 1.2.374 -- 2021-12-10
   * Address #82 by making shutdown process overridable.
-  * Update `build-clj` to v0.6.0 in all templates and use "slim" dependency for `app` template.
+  * Update `build-clj` to v0.6.1 (for updated log4j dependency) in all templates and use "slim" dependency for `app` template.
   * Update `tools.deps.alpha` to 0.12.1084.
 
 * 1.2.362 -- 2021-09-22
