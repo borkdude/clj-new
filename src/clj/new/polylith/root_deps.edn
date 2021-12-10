@@ -8,7 +8,7 @@
             :test {:extra-paths ["bases/cli/test"
                                  "components/greeter/test"
                                  "projects/{{name}}/test"]
-                   :extra-deps {org.clojure/test.check {:mvn/version "1.1.0"}}}
+                   :extra-deps {org.clojure/test.check {:mvn/version "1.1.1"}}}
 
             :poly {:main-opts ["-m" "polylith.clj.core.poly-cli.core"]
                    :extra-deps {polyfy/polylith
