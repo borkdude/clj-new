@@ -1,7 +1,7 @@
 # Changes
 
 * 1.2.next in progress
-  * Update `build-clj` to v0.6.2 (for updated `tools.build`).
+  * Update `build-clj` to v0.6.3 (for updated `tools.build` and another log4j2 update).
 
 * 1.2.377 -- 2021-12-10
   * Address #82 by making shutdown process overridable.
