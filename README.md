@@ -17,7 +17,7 @@ The easiest way to use `clj-new` is by installing it as a "tool" instead of upda
 
 ```bash
 # one-off to install clj-new as a tool:
-clojure -Ttools install com.github.seancorfield/clj-new '{:git/tag "v1.2.377"}' :as clj-new
+clojure -Ttools install com.github.seancorfield/clj-new '{:git/tag "v1.2.380"}' :as clj-new
 
 # commands to create new projects:
 
@@ -44,7 +44,7 @@ If you don't want to install `clj-new` as a "tool", you can add an alias to your
 ```clj
     ;; add this inside your :aliases map:
     :new {:extra-deps {com.github.seancorfield/clj-new
-                       {:mvn/version "1.2.377"}}
+                       {:mvn/version "1.2.380"}}
           :exec-fn clj-new/create
           :exec-args {:template "app"}}
 ```
@@ -53,7 +53,7 @@ A minimal, complete `deps.edn` file with just this `:new` alias would look like 
 
 ```clj
 {:aliases
- {:new {:extra-deps {com.github.seancorfield/clj-new {:mvn/version "1.2.377"}}
+ {:new {:extra-deps {com.github.seancorfield/clj-new {:mvn/version "1.2.380"}}
         :exec-fn clj-new/create
         :exec-args {:template "app"}}}}
 ```
@@ -90,11 +90,11 @@ If you think you are going to be creating more libraries than applications, you 
 ```clj
       ;; add these into your :aliases map:
       :new-app {:extra-deps {com.github.seancorfield/clj-new
-                             {:mvn/version "1.2.377"}}
+                             {:mvn/version "1.2.380"}}
                 :exec-fn clj-new/create
                 :exec-args {:template "app"}}
       :new-lib {:extra-deps {com.github.seancorfield/clj-new
-                             {:mvn/version "1.2.377"}}
+                             {:mvn/version "1.2.380"}}
                 :exec-fn clj-new/create
                 :exec-args {:template "lib"}}}
 ```
@@ -589,7 +589,7 @@ You can either say `clojure -Tclj-new generate ...` or add an alias for it:
 ```clj
     ;; add this inside your :aliases map:
     :generate {:extra-deps {com.github.seancorfield/clj-new
-                            {:mvn/version "1.2.377"}}
+                            {:mvn/version "1.2.380"}}
                :exec-fn clj-new/generate}}
 ```
 
@@ -647,7 +647,7 @@ The exec-args available for the `generate` function are:
 
 This project follows the version scheme MAJOR.MINOR.COMMITS where MAJOR and MINOR provide some relative indication of the size of the change, but do not follow semantic versioning. In general, all changes endeavor to be non-breaking (by moving to new names rather than by breaking existing names). COMMITS is an ever-increasing counter of commits since the beginning of this repository.
 
-Latest stable release: 1.2.377
+Latest stable release: 1.2.380
 
 ## Roadmap
 
