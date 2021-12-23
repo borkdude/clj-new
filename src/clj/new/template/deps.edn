@@ -1,11 +1,11 @@
 {:paths ["src" "resources"]
  :deps {org.clojure/clojure {:mvn/version "1.10.3"}
-        com.github.seancorfield/clj-new {:mvn/version "1.2.380"}}
+        com.github.seancorfield/clj-new {:mvn/version "1.2.381"}}
  :aliases
  {:new {:exec-fn clj-new/create
         :exec-args {:template "{{name}}"}}
   :build {:deps {io.github.seancorfield/build-clj
-                 {:git/tag "v0.6.3" :git/sha "9b8e09b"}}
+                 {:git/tag "v0.6.4" :git/sha "c21cfde"}}
           :ns-default build}
   :test {:extra-paths ["test"]
          :extra-deps {org.clojure/test.check {:mvn/version "1.1.1"}
