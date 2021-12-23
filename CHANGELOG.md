@@ -1,5 +1,9 @@
 # Changes
 
+* 1.2.next in progress
+  * Update `tools.deps.alpha` to latest.
+  * Update `build-clj` to v0.6.5 (for updated `tools.build`).
+
 * 1.2.381 -- 2021-12-22
   * Update `tools.deps.alpha` to latest.
   * Update `build-clj` to v0.6.4 (for updated `tools.build` and another log4j2 update).
