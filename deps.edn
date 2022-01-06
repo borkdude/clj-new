@@ -1,6 +1,6 @@
 {:deps {clj-commons/pomegranate {:mvn/version "1.2.1"}
         org.clojure/tools.cli {:mvn/version "1.0.206"}
-        org.clojure/tools.deps.alpha {:mvn/version "0.12.1104"}
+        org.clojure/tools.deps.alpha {:mvn/version "0.12.1109"}
         stencil/stencil {:mvn/version "0.5.0"}
         ;; add this because tools.deps.alpha no longer includes it
         org.slf4j/slf4j-nop {:mvn/version "1.7.32"}}
@@ -22,5 +22,5 @@
 
            ;; for help: clojure -A:deps -T:build help/doc
            :build {:deps {io.github.seancorfield/build-clj
-                          {:git/tag "v0.6.6" :git/sha "171d5f1"}}
+                          {:git/tag "v0.6.7" :git/sha "22c2d09"}}
                    :ns-default build}}}
