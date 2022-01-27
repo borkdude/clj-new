@@ -1,6 +1,7 @@
 # Changes
 
 * 1.2.next in progress
+  * Update README to link to Deps and Cli Reference > Quoting keys and values (for Powershell users).
   * Update `tools.deps.alpha` to latest.
   * Update `build-clj` to v0.6.7 (for updated `tools.build` and another log4j2 update).
 
