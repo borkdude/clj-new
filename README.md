@@ -37,7 +37,7 @@ You can get help about the functions available in `clj-new`:
 clojure -A:deps -Tclj-new help/doc
 ```
 
-> Note: if you are on Windows, read [https://clojure.org/reference/deps_and_cli#quoting](**Quoting keys and values**) in the official **Deps and CLI Reference** documentation to understand how the above commands need to look on Powershell.
+> Note: if you are on Windows, read [**Quoting keys and values**](https://clojure.org/reference/deps_and_cli#quoting) in the official **Deps and CLI Reference** documentation to understand how the above commands need to look on Powershell.
 
 ### Installation via `deps.edn`
 
