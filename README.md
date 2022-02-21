@@ -645,6 +645,10 @@ The exec-args available for the `generate` function are:
 * `:template` -- load this template (using the same rules as for `clj-new/create` above) and then run the specified generator
 * `:version` -- use this specific version of the template
 
+## Emacs Integration
+
+An [emacs package](https://github.com/jpe90/emacs-clj-deps-new) is available which provides a Magit-style interface to `clj-new` and `deps-new`. It includes some community templates and welcomes for recommendations for more.
+
 # Releases
 
 This project follows the version scheme MAJOR.MINOR.COMMITS where MAJOR and MINOR provide some relative indication of the size of the change, but do not follow semantic versioning. In general, all changes endeavor to be non-breaking (by moving to new names rather than by breaking existing names). COMMITS is an ever-increasing counter of commits since the beginning of this repository.
