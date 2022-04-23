@@ -123,7 +123,7 @@ The following `:exec-args` can be provided for `clj-new/create`:
 * `:query` -- if `true`, instead of actually looking up the template and generating the project, output an explanation of what `clj-new` will try to do
 * `:snapshot` -- if `true`, look for -SNAPSHOT version of the template (not just a release version)
 * `:verbose` -- 1, 2, or 3, indicating the level of debugging in increasing detail
-* `:version` -- use this specific version of the template, e.g., `'"1.2.3"'` (remmber that strings need to 'quoted' as exec args)
+* `:version` -- use this specific version of the template, e.g., `'"1.2.3"'` (remember that strings need to 'quoted' as exec args)
 
 ### Project Names
 
