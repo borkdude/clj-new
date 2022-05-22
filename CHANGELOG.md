@@ -2,6 +2,7 @@
 
 * 1.2.next in progress
   * Update README to link to Deps and Cli Reference > Quoting keys and values (for Powershell users).
+  * Improved docstring for `clj-new/create` #85.
   * Update `tools.deps.alpha` to latest.
   * Update `build-clj` to v0.8.0 (for updated `tools.build` and another log4j2 update).
 
